@@ -38,7 +38,7 @@ RUN mkdir /root/ibc
 RUN unzip ./IBCLinux-${IBC_VERSION}.zip -d /root/ibc
 RUN chmod -R u+x /root/ibc/*.sh 
 RUN chmod -R u+x /root/ibc/scripts/*.sh
-COPY ./config/ibc/config.ini.tmpl /root/ibc/config.ini.tmpl
+COPY ./stable/config/ibc/config.ini.tmpl /root/ibc/config.ini.tmpl
 
 # Copy scripts
 COPY ./scripts /root/scripts
