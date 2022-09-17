@@ -30,7 +30,7 @@ RUN curl -sSL https://storage.googleapis.com/ib-dependencies/ibgateway-10.12.2u-
 # RUN sha256sum --check ./ibgateway-${IB_GATEWAY_VERSION}-standalone-linux-x64.sh.sha256
 RUN chmod a+x ./ibgateway-${IB_GATEWAY_VERSION}-standalone-linux-x64.sh
 RUN ./ibgateway-${IB_GATEWAY_VERSION}-standalone-linux-x64.sh -q -dir /root/Jts/ibgateway/${IB_GATEWAY_VERSION}
-COPY ./config/ibgateway/jts.ini /root/Jts/jts.ini
+COPY ./stable/config/ibgateway/jts.ini /root/Jts/jts.ini
 
 # Install IBC
 RUN curl -sSL https://storage.googleapis.com/ib-dependencies/IBCLinux-3.14.0.zip --output IBCLinux-${IBC_VERSION}.zip
