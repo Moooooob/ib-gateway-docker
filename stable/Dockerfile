@@ -41,7 +41,7 @@ RUN chmod -R u+x /root/ibc/scripts/*.sh
 COPY ./stable/config/ibc/config.ini.tmpl /root/ibc/config.ini.tmpl
 
 # Copy scripts
-COPY ./scripts /root/scripts
+COPY ./stable/scripts /root/scripts
 
 #
 # Build Stage: build production image
